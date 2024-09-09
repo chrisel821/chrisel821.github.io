@@ -1,7 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: black; /* Sets background color to black */
+            color: rgb(74, 255, 101); /* Sets text color to mint green */
+            font-family: Arial, sans-serif; /* Optional: set a font */
+            margin: 0; /* Removes default margin */
+            text-align: center; /* Centers the text horizontally */
+        }
+
+        /* Styles for the navigation bar */
+        .navbar {
+            background-color: rgba(0, 0, 93, 0.735); /* Sets the background color of the navbar to navy blue */
+            overflow: hidden; /* Ensures the content is contained within the navbar */
+            padding: 10px 0; /* Adds padding for better spacing */
+        }
+
+        /* Styles for the links (tabs) in the navbar */
+        .navbar a {
+            float: left; /* Aligns the tabs horizontally */
+            display: block;
+            color: rgb(71, 255, 71); /* Text color set to mint green */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none; /* Removes underline from links */
+            font-size: 18px;
+        }
+
+        /* Add hover effect for tabs */
+        .navbar a:hover {
+            background-color: #0c08daf2; /* lighter blue on hover */
+        }
+
+        /* Clears floats */
+        .navbar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Main content area */
+        .content {
+            padding: 20px;
+            height: 80vh; /* Fills most of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#external-links">External Links</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div>
+            <h1>Welcome to OPA</h1>
+            <p>This is a test site for opa.globe</p>
+        </div>
+    </div>
+
 </body>
 </html>
